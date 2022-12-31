@@ -4,9 +4,9 @@ Based on code modifications by Sean 'Zoner' Cavanaugh
 Based on Valve's version, modified with permission.
 Submit detailed bug reports to (vluzacn@163.com)
 -----  BEGIN  hlcsg -----
-Command line: C:/Users/conte/Downloads/Release/Tools/J.A.C.K/tools/hlcsg.exe "C:\Program Files (x86)\Steam\steamapps\common\Half-Life\backrooms-gold\maps\backrooms" 
-Arguments: "C:\Program Files (x86)\Steam\steamapps\common\Half-Life\backrooms-gold\maps\backrooms" -low -wadautodetect 
-Entering C:\Program Files (x86)\Steam\steamapps\common\Half-Life\backrooms-gold\maps\backrooms.map
+Command line: C:/Users/conte/Downloads/Release/Tools/J.A.C.K/tools/hlcsg.exe "C:\Program Files (x86)\Steam\steamapps\common\Half-Life\backrooms-gold\maps\backrooms_level_1" 
+Arguments: "C:\Program Files (x86)\Steam\steamapps\common\Half-Life\backrooms-gold\maps\backrooms_level_1" -low -wadautodetect 
+Entering C:\Program Files (x86)\Steam\steamapps\common\Half-Life\backrooms-gold\maps\backrooms_level_1.map
 
 Current hlcsg Settings
 Name                 |  Setting  |  Default
@@ -46,18 +46,21 @@ Wadinclude list :
 [zhlt.wad]
 
 CreateBrush:
- (0.07 seconds)
+ (0.05 seconds)
 CSGBrush:
- (0.62 seconds)
+ (0.53 seconds)
 
+added 8 additional animating textures.
 Using Wadfile: \Program Files (x86)\Steam\steamapps\common\Half-Life\valve\halflife.wad
- - Contains 2 used textures, 33.33 percent of map (3116 textures in wad)
+ - Contains 19 used textures, 82.61 percent of map (3116 textures in wad)
+Using Wadfile: \Program Files (x86)\Steam\steamapps\common\Half-Life\valve\liquids.wad
+ - Contains 1 used texture, 4.35 percent of map (32 textures in wad)
 Using Wadfile: \Program Files (x86)\Steam\steamapps\common\Half-Life\backrooms-gold\backrooms.wad
- - Contains 4 used textures, 66.67 percent of map (4 textures in wad)
+ - Contains 3 used textures, 13.04 percent of map (4 textures in wad)
 
-Wad files required to run the map: "halflife.wad;backrooms.wad;"
-Texture usage is at 0.19 mb (of 32.00 mb MAX)
-0.77 seconds elapsed
+Wad files required to run the map: "halflife.wad;liquids.wad;backrooms.wad;"
+Texture usage is at 0.44 mb (of 32.00 mb MAX)
+0.68 seconds elapsed
 
 -----   END   hlcsg -----
 
@@ -69,8 +72,8 @@ Based on code modifications by Sean 'Zoner' Cavanaugh
 Based on Valve's version, modified with permission.
 Submit detailed bug reports to (vluzacn@163.com)
 -----  BEGIN  hlbsp -----
-Command line: C:/Users/conte/Downloads/Release/Tools/J.A.C.K/tools/hlbsp.exe "C:\Program Files (x86)\Steam\steamapps\common\Half-Life\backrooms-gold\maps\backrooms" 
-Arguments: "C:\Program Files (x86)\Steam\steamapps\common\Half-Life\backrooms-gold\maps\backrooms" -low -chart 
+Command line: C:/Users/conte/Downloads/Release/Tools/J.A.C.K/tools/hlbsp.exe "C:\Program Files (x86)\Steam\steamapps\common\Half-Life\backrooms-gold\maps\backrooms_level_1" 
+Arguments: "C:\Program Files (x86)\Steam\steamapps\common\Half-Life\backrooms-gold\maps\backrooms_level_1" -low -chart 
 
 Current hlbsp Settings
 Name               |  Setting  |  Default
@@ -97,42 +100,42 @@ max node size       [    1024 ] [    1024 ] (Min 64) (Max 65536)
 remove hull 2       [     off ] [     off ]
 
 
-SolidBSP [hull 0] 500...1000...1134 (0.16 seconds)
-BSP generation successful, writing portal file 'C:\Program Files (x86)\Steam\steamapps\common\Half-Life\backrooms-gold\maps\backrooms.prt'
-SolidBSP [hull 1] 500...1000...1191 (0.12 seconds)
-SolidBSP [hull 2] 500...851 (0.07 seconds)
-SolidBSP [hull 3] 500...1000...1172 (0.11 seconds)
-Reduced 2400 clipnodes to 1845
-Reduced 217 texinfos to 82
-Reduced 6 texdatas to 6 (268 bytes to 268)
-Reduced 1368 planes to 567
+SolidBSP [hull 0] 500...561 (0.06 seconds)
+BSP generation successful, writing portal file 'C:\Program Files (x86)\Steam\steamapps\common\Half-Life\backrooms-gold\maps\backrooms_level_1.prt'
+SolidBSP [hull 1] 500...731 (0.06 seconds)
+SolidBSP [hull 2] 500...746 (0.06 seconds)
+SolidBSP [hull 3] 500...745 (0.06 seconds)
+Reduced 1293 clipnodes to 1170
+Reduced 310 texinfos to 122
+Reduced 23 texdatas to 23 (1016 bytes to 1016)
+Reduced 1726 planes to 521
 FixBrinks:
-Increased 1845 clipnodes to 1845.
+Increased 1170 clipnodes to 1170.
 
 Object names  Objects/Maxobjs  Memory / Maxmem  Fullness
 ------------  ---------------  ---------------  --------
 models              6/512          384/32768    ( 1.2%)
-planes            567/32768      11340/655360   ( 1.7%)
-vertexes         5898/65535      70776/786420   ( 9.0%)
-nodes             856/32767      20544/786408   ( 2.6%)
-texinfos           82/32767       3280/1310680  ( 0.3%)
-faces            3832/65535      76640/1310700  ( 5.8%)
-* worldfaces     3820/32768          0/0        (11.7%)
-clipnodes        1845/32767      14760/262136   ( 5.6%)
-leaves            446/32760      12488/917280   ( 1.4%)
-* worldleaves     415/8192           0/0        ( 5.1%)
-marksurfaces     4700/65535       9400/131070   ( 7.2%)
-surfedges       19792/512000     79168/2048000  ( 3.9%)
-edges            9900/256000     39600/1024000  ( 3.9%)
-texdata          [variable]        268/33554432 ( 0.0%)
+planes            521/32768      10420/655360   ( 1.6%)
+vertexes         3429/65535      41148/786420   ( 5.2%)
+nodes             337/32767       8088/786408   ( 1.0%)
+texinfos          122/32767       4880/1310680  ( 0.4%)
+faces            2175/65535      43500/1310700  ( 3.3%)
+* worldfaces     2129/32768          0/0        ( 6.5%)
+clipnodes        1170/32767       9360/262136   ( 3.6%)
+leaves            185/32760       5180/917280   ( 0.6%)
+* worldleaves     149/8192           0/0        ( 1.8%)
+marksurfaces     2540/65535       5080/131070   ( 3.9%)
+surfedges       11408/512000     45632/2048000  ( 2.2%)
+edges            5705/256000     22820/1024000  ( 2.2%)
+texdata          [variable]       1016/33554432 ( 0.0%)
 lightdata        [variable]          0/50331648 ( 0.0%)
 visdata          [variable]          0/8388608  ( 0.0%)
-entdata          [variable]      38671/2097152  ( 1.8%)
-* AllocBlock       15/64             0/0        (23.4%)
-6 textures referenced
-=== Total BSP file data space used: 377319 bytes ===
-Wad files required to run the map: "halflife.wad;backrooms.wad;"
-3.72 seconds elapsed
+entdata          [variable]      33379/2097152  ( 1.6%)
+* AllocBlock       11/64             0/0        (17.2%)
+23 textures referenced
+=== Total BSP file data space used: 230887 bytes ===
+Wad files required to run the map: "halflife.wad;liquids.wad;backrooms.wad;"
+1.28 seconds elapsed
 
 -----   END   hlbsp -----
 
@@ -144,10 +147,10 @@ Based on code modifications by Sean 'Zoner' Cavanaugh
 Based on Valve's version, modified with permission.
 Submit detailed bug reports to (vluzacn@163.com)
 -----  BEGIN  hlvis -----
-Command line: C:/Users/conte/Downloads/Release/Tools/J.A.C.K/tools/hlvis.exe "C:\Program Files (x86)\Steam\steamapps\common\Half-Life\backrooms-gold\maps\backrooms" 
-Arguments: "C:\Program Files (x86)\Steam\steamapps\common\Half-Life\backrooms-gold\maps\backrooms" -low 
- 415 portalleafs
- 623 numportals
+Command line: C:/Users/conte/Downloads/Release/Tools/J.A.C.K/tools/hlvis.exe "C:\Program Files (x86)\Steam\steamapps\common\Half-Life\backrooms-gold\maps\backrooms_level_1" 
+Arguments: "C:\Program Files (x86)\Steam\steamapps\common\Half-Life\backrooms-gold\maps\backrooms_level_1" -low 
+ 149 portalleafs
+ 267 numportals
 
 -= Current hlvis Settings =-
 Name               |  Setting  |  Default
@@ -167,12 +170,12 @@ full vis            [     off ] [     off ]
 
 
 BasePortalVis:
- (0.02 seconds)
+ (0.00 seconds)
 LeafThread:
  (0.01 seconds)
-average leafs visible: 38
-g_visdatasize:8364  compressed from 21580
-0.04 seconds elapsed
+average leafs visible: 35
+g_visdatasize:2023  compressed from 2831
+0.02 seconds elapsed
 
 -----   END   hlvis -----
 
@@ -184,8 +187,8 @@ Based on code modifications by Sean 'Zoner' Cavanaugh
 Based on Valve's version, modified with permission.
 Submit detailed bug reports to (vluzacn@163.com)
 -----  BEGIN  hlrad -----
-Command line: C:/Users/conte/Downloads/Release/Tools/J.A.C.K/tools/hlrad.exe "C:\Program Files (x86)\Steam\steamapps\common\Half-Life\backrooms-gold\maps\backrooms" 
-Arguments: "C:\Program Files (x86)\Steam\steamapps\common\Half-Life\backrooms-gold\maps\backrooms" -low 
+Command line: C:/Users/conte/Downloads/Release/Tools/J.A.C.K/tools/hlrad.exe "C:\Program Files (x86)\Steam\steamapps\common\Half-Life\backrooms-gold\maps\backrooms_level_1" 
+Arguments: "C:\Program Files (x86)\Steam\steamapps\common\Half-Life\backrooms-gold\maps\backrooms_level_1" -low 
 
 -= Current hlrad Settings =-
 Name                | Setting             | Default
@@ -253,52 +256,52 @@ wall bleeding fix    [                on ] [                on ]
 
 
 Load Textures:
-Using Wadfile: C:\Program Files (x86)\Steam\steamapps\common\Half-Life\backrooms-gold\maps\backrooms.wa_
-6 textures referenced
+Using Wadfile: C:\Program Files (x86)\Steam\steamapps\common\Half-Life\backrooms-gold\maps\backrooms_level_1.wa_
+23 textures referenced
 Reading texlights from 'C:\Users\conte\Downloads\Release\Tools\J.A.C.K\tools\lights.rad'
 0 opaque models
 0 opaque faces
-3832 faces
-Create Patches : 14614 base patches
-286151 square feet [41205812.00 square inches]
-312 direct lights and 0 fast direct lights
+2175 faces
+Create Patches : 9098 base patches
+230487 square feet [33190228.00 square inches]
+260 direct lights and 0 fast direct lights
 1 light styles
 
 FindFacePositions:
- (0.82 seconds)
+ (0.65 seconds)
 BuildFacelights:
- (2.97 seconds)
+ (1.44 seconds)
 BuildVisLeafs:
- (0.95 seconds)
-visibility matrix   :   3.6 megs
+ (0.59 seconds)
+visibility matrix   :   3.0 megs
 MakeScales:
- (1.49 seconds)
-Transfer Lists :     7018028 :     7.02M transfers
-       Indices :     3766732 :     3.59M bytes
-          Data :    14079826 :    13.43M bytes
+ (0.68 seconds)
+Transfer Lists :     5838626 :     5.84M transfers
+       Indices :     3267068 :     3.12M bytes
+          Data :    11704363 :    11.16M bytes
 Bounce 1 GatherLight:
- (0.05 seconds)
+ (0.03 seconds)
 Bounce 2 GatherLight:
- (0.05 seconds)
+ (0.03 seconds)
 Bounce 3 GatherLight:
- (0.05 seconds)
+ (0.03 seconds)
 Bounce 4 GatherLight:
- (0.05 seconds)
+ (0.03 seconds)
 Bounce 5 GatherLight:
- (0.04 seconds)
+ (0.03 seconds)
 Bounce 6 GatherLight:
- (0.04 seconds)
+ (0.03 seconds)
 Bounce 7 GatherLight:
- (0.04 seconds)
+ (0.03 seconds)
 Bounce 8 GatherLight:
- (0.04 seconds)
+ (0.03 seconds)
 CreateTriangulations:
  (0.07 seconds)
 AddPatchLights:
- (0.97 seconds)
+ (0.90 seconds)
 FinalLightFace:
  (0.01 seconds)
-7.93 seconds elapsed
+4.78 seconds elapsed
 
 -----   END   hlrad -----
 
