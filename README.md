@@ -2,7 +2,7 @@
 this is a recreation of the backrooms in the goldscr engine(used in half life 1)
 and is very much in devepment.
 
-list of backrooms level i want to add
+list of backrooms levels i added and want to add
 
 fisinshed
 1:level 0
