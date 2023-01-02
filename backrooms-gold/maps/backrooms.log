@@ -48,7 +48,7 @@ Wadinclude list :
 CreateBrush:
  (0.07 seconds)
 CSGBrush:
- (0.62 seconds)
+ (0.65 seconds)
 
 Using Wadfile: \Program Files (x86)\Steam\steamapps\common\Half-Life\valve\halflife.wad
  - Contains 2 used textures, 33.33 percent of map (3116 textures in wad)
@@ -57,7 +57,7 @@ Using Wadfile: \Program Files (x86)\Steam\steamapps\common\Half-Life\backrooms-g
 
 Wad files required to run the map: "halflife.wad;backrooms.wad;"
 Texture usage is at 0.19 mb (of 32.00 mb MAX)
-0.77 seconds elapsed
+0.89 seconds elapsed
 
 -----   END   hlcsg -----
 
@@ -97,42 +97,42 @@ max node size       [    1024 ] [    1024 ] (Min 64) (Max 65536)
 remove hull 2       [     off ] [     off ]
 
 
-SolidBSP [hull 0] 500...1000...1134 (0.16 seconds)
+SolidBSP [hull 0] 500...1000...1134 (0.14 seconds)
 BSP generation successful, writing portal file 'C:\Program Files (x86)\Steam\steamapps\common\Half-Life\backrooms-gold\maps\backrooms.prt'
-SolidBSP [hull 1] 500...1000...1191 (0.12 seconds)
-SolidBSP [hull 2] 500...851 (0.07 seconds)
-SolidBSP [hull 3] 500...1000...1172 (0.11 seconds)
-Reduced 2400 clipnodes to 1845
-Reduced 217 texinfos to 82
+SolidBSP [hull 1] 500...1000...1182 (0.11 seconds)
+SolidBSP [hull 2] 500...880 (0.07 seconds)
+SolidBSP [hull 3] 500...1000...1194 (0.11 seconds)
+Reduced 2434 clipnodes to 1875
+Reduced 217 texinfos to 84
 Reduced 6 texdatas to 6 (268 bytes to 268)
-Reduced 1368 planes to 567
+Reduced 1388 planes to 577
 FixBrinks:
-Increased 1845 clipnodes to 1845.
+Increased 1875 clipnodes to 1875.
 
 Object names  Objects/Maxobjs  Memory / Maxmem  Fullness
 ------------  ---------------  ---------------  --------
-models              6/512          384/32768    ( 1.2%)
-planes            567/32768      11340/655360   ( 1.7%)
-vertexes         5898/65535      70776/786420   ( 9.0%)
-nodes             856/32767      20544/786408   ( 2.6%)
-texinfos           82/32767       3280/1310680  ( 0.3%)
-faces            3832/65535      76640/1310700  ( 5.8%)
+models              7/512          448/32768    ( 1.4%)
+planes            577/32768      11540/655360   ( 1.8%)
+vertexes         5906/65535      70872/786420   ( 9.0%)
+nodes             863/32767      20712/786408   ( 2.6%)
+texinfos           84/32767       3360/1310680  ( 0.3%)
+faces            3838/65535      76760/1310700  ( 5.9%)
 * worldfaces     3820/32768          0/0        (11.7%)
-clipnodes        1845/32767      14760/262136   ( 5.6%)
-leaves            446/32760      12488/917280   ( 1.4%)
+clipnodes        1875/32767      15000/262136   ( 5.7%)
+leaves            452/32760      12656/917280   ( 1.4%)
 * worldleaves     415/8192           0/0        ( 5.1%)
-marksurfaces     4700/65535       9400/131070   ( 7.2%)
-surfedges       19792/512000     79168/2048000  ( 3.9%)
-edges            9900/256000     39600/1024000  ( 3.9%)
+marksurfaces     4699/65535       9398/131070   ( 7.2%)
+surfedges       19816/512000     79264/2048000  ( 3.9%)
+edges            9912/256000     39648/1024000  ( 3.9%)
 texdata          [variable]        268/33554432 ( 0.0%)
 lightdata        [variable]          0/50331648 ( 0.0%)
 visdata          [variable]          0/8388608  ( 0.0%)
-entdata          [variable]      38671/2097152  ( 1.8%)
+entdata          [variable]      38736/2097152  ( 1.8%)
 * AllocBlock       15/64             0/0        (23.4%)
 6 textures referenced
-=== Total BSP file data space used: 377319 bytes ===
+=== Total BSP file data space used: 378662 bytes ===
 Wad files required to run the map: "halflife.wad;backrooms.wad;"
-3.72 seconds elapsed
+3.50 seconds elapsed
 
 -----   END   hlbsp -----
 
@@ -147,7 +147,7 @@ Submit detailed bug reports to (vluzacn@163.com)
 Command line: C:/Users/conte/Downloads/Release/Tools/J.A.C.K/tools/hlvis.exe "C:\Program Files (x86)\Steam\steamapps\common\Half-Life\backrooms-gold\maps\backrooms" 
 Arguments: "C:\Program Files (x86)\Steam\steamapps\common\Half-Life\backrooms-gold\maps\backrooms" -low 
  415 portalleafs
- 623 numportals
+ 617 numportals
 
 -= Current hlvis Settings =-
 Name               |  Setting  |  Default
@@ -167,11 +167,11 @@ full vis            [     off ] [     off ]
 
 
 BasePortalVis:
- (0.02 seconds)
+ (0.01 seconds)
 LeafThread:
  (0.01 seconds)
 average leafs visible: 38
-g_visdatasize:8364  compressed from 21580
+g_visdatasize:8343  compressed from 21580
 0.04 seconds elapsed
 
 -----   END   hlvis -----
@@ -258,47 +258,47 @@ Using Wadfile: C:\Program Files (x86)\Steam\steamapps\common\Half-Life\backrooms
 Reading texlights from 'C:\Users\conte\Downloads\Release\Tools\J.A.C.K\tools\lights.rad'
 0 opaque models
 0 opaque faces
-3832 faces
-Create Patches : 14614 base patches
-286151 square feet [41205812.00 square inches]
+3838 faces
+Create Patches : 14619 base patches
+286158 square feet [41206864.00 square inches]
 312 direct lights and 0 fast direct lights
 1 light styles
 
 FindFacePositions:
- (0.82 seconds)
+ (0.68 seconds)
 BuildFacelights:
- (2.97 seconds)
+ (1.99 seconds)
 BuildVisLeafs:
- (0.95 seconds)
-visibility matrix   :   3.6 megs
+ (0.73 seconds)
+visibility matrix   :   3.5 megs
 MakeScales:
- (1.49 seconds)
-Transfer Lists :     7018028 :     7.02M transfers
-       Indices :     3766732 :     3.59M bytes
-          Data :    14079826 :    13.43M bytes
+ (1.15 seconds)
+Transfer Lists :     7018920 :     7.02M transfers
+       Indices :     3765056 :     3.59M bytes
+          Data :    14081622 :    13.43M bytes
 Bounce 1 GatherLight:
- (0.05 seconds)
+ (0.03 seconds)
 Bounce 2 GatherLight:
- (0.05 seconds)
+ (0.03 seconds)
 Bounce 3 GatherLight:
- (0.05 seconds)
+ (0.03 seconds)
 Bounce 4 GatherLight:
- (0.05 seconds)
+ (0.03 seconds)
 Bounce 5 GatherLight:
- (0.04 seconds)
+ (0.03 seconds)
 Bounce 6 GatherLight:
- (0.04 seconds)
+ (0.03 seconds)
 Bounce 7 GatherLight:
- (0.04 seconds)
+ (0.03 seconds)
 Bounce 8 GatherLight:
- (0.04 seconds)
+ (0.03 seconds)
 CreateTriangulations:
- (0.07 seconds)
+ (0.06 seconds)
 AddPatchLights:
- (0.97 seconds)
+ (0.75 seconds)
 FinalLightFace:
  (0.01 seconds)
-7.93 seconds elapsed
+5.87 seconds elapsed
 
 -----   END   hlrad -----
 
